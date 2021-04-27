@@ -5,7 +5,6 @@ Methods for using as few human-labeled samples as possible, while training good 
 This repo considers the following categories of methods. See each folder for more details
 
 * [Active Learning](#active_learning)
-
 * [Semi-Supervised Learning](#semi_supervised_learning)
 
 
