@@ -8,7 +8,7 @@ import sys
 import os
 
 
-from uncertainty_least_confident import uncertainty_least_confident
+from uncertainty_confident import uncertainty_confident
 
 
 class ActiveLearning:
@@ -38,9 +38,12 @@ class ActiveLearning:
     def sample(self, X, y, n_sample, **kwargs):
         function_call_str = self.sampling_method_name + "(X=X, y=y, n_sample=n_sample, kwargs=kwargs)"
         result = eval(function_call_str)
+        return result
 
 
 
 if __name__ == "__main__":
 
-    a = ActiveLearning("uncertainty_least_confident")
+    a = ActiveLearning("uncertainty_confident")
+
+    a.sample(None, None, None)
